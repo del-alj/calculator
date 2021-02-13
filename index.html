@@ -12,35 +12,36 @@
         <main>
             <div id="core">
                 <div class="box1">
-                    <div id="imput"><input id="imput" size="21.3px" placeholder="0" type="text"></div>
+                    <div id="imput"><input id="imput" onsubmit="return false;" size="21.3px" placeholder="0" type="text"></div>
                 </div>
                 <div class="box2">
-                    <div onclick="alert('Clear')" class="icon1 colorA">
+                    <div onclick="clear()" class="icon1 colorA">
                         <p style="font-size: 30px;">Clear</p>
                     </div>
-                    <div onclick="alert('Delete')" class="icon1 colorB">
+                    <div onclick="clear()" class="icon1 colorB">
                         <p style="font-size: 30px;">Delete</p>
                     </div>
                 </div>
                 <div class="box3">
-                    <div onclick="alert(7)" class="icon2 colorX"><p>7</p></div>
-                    <div onclick="alert(8)" class="icon2 colorX"><p>8</p></div>
-                    <div onclick="alert(9)" class="icon2 colorX"><p>9</p></div>
-                    <div onclick="alert('/')" class="icon2 colorX"><p>/</p></div>
-                    <div onclick="alert(4)" class="icon2 colorX"><p>4</p></div>
-                    <div onclick="alert(5)" class="icon2 colorX"><p>5</p></div>
-                    <div onclick="alert(6)" class="icon2 colorX"><p>6</p></div>
-                    <div onclick="alert('*')" class="icon2 colorX"><p>*</p></div>
-                    <div onclick="alert(1)" class="icon2 colorX"><p>1</p></div>
-                    <div onclick="alert(2)" class="icon2 colorX"><p>2</p></div>
-                    <div onclick="alert(3)" class="icon2 colorX"><p>3</p></div>
-                    <div onclick="alert('-')" class="icon2 colorX"><p>-</p></div>
-                    <div onclick="alert('.')" class="icon2 colorX"><p>.</p></div>
-                    <div onclick="alert(0)" class="icon2 colorX"><p>0</p></div>
-                    <div onclick="alert('=')" class="icon2 colorX"><p>=</p></div>
-                    <div onclick="alert('+')" class="icon2 colorX"><p>+</p></div>
+                    <div onclick="getNum(7)" class="icon2 colorX"><p>7</p></div>
+                    <div onclick="getNum(8)" class="icon2 colorX"><p>8</p></div>
+                    <div onclick="getNum(9)" class="icon2 colorX"><p>9</p></div>
+                    <div onclick="getSambol('/')" class="icon2 colorX"><p>/</p></div>
+                    <div onclick="getNum(4)" class="icon2 colorX"><p>4</p></div>
+                    <div onclick="getNum(5)" class="icon2 colorX"><p>5</p></div>
+                    <div onclick="getNum(6)" class="icon2 colorX"><p>6</p></div>
+                    <div onclick="getSambol('*')" class="icon2 colorX"><p>*</p></div>
+                    <div onclick="getNum(1)" class="icon2 colorX"><p>1</p></div>
+                    <div onclick="getNum(2)" class="icon2 colorX"><p>2</p></div>
+                    <div onclick="getNum(3)" class="icon2 colorX"><p>3</p></div>
+                    <div onclick="getSambol('-')" class="icon2 colorX"><p>-</p></div>
+                    <div onclick="getSambol('.')" class="icon2 colorX"><p>.</p></div>
+                    <div onclick="getNum(0)" class="icon2 colorX"><p>0</p></div>
+                    <div onclick="getSambol('=')" class="icon2 colorX"><p>=</p></div>
+                    <div onclick="getSambol('+')" class="icon2 colorX"><p>+</p></div>
                 </div>
             </div>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>
